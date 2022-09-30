@@ -1,0 +1,19 @@
+service: ezrealblindado-serverless
+
+plugins:
+  - serverless-bundle
+  - serverless-pseudo-parameters
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  memorySize: 256
+  stage: ${opt:stage, 'dev'}
+  
+functions:
+  attendance:
+    handler: src/handlers/attendance.handler
+    events:
+      - http:
+          method: GET
+          path: /attendance
