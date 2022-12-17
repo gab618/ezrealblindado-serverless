@@ -25,7 +25,7 @@ async function attendance(event, context) {
     case 'aautumn':
       msg = `${greeting} @${sender} :D 🐟🐟🐟🐟🐟🐟🐟! @ezrealblindado da ${greeting} pro atum!`;
       break;
-    case 'ratodecrocs':
+    case 'ratadecrocs':
       msg = `${greeting} @${sender} :D ${greeting} Netuno e Rusty! 🐈🐈 @ezrealblindado da ${greeting} pra freefire!`;
       break;
     case 'antonydev':
@@ -69,6 +69,9 @@ async function attendance(event, context) {
       break;
     case 'deusdapadaria':
       msg = `${greeting} @${sender} @ezrealblindado da ${greeting} pro Deus da padaria e já pega um pão 🍞`;
+      break;
+    case 'doutorquem_':
+      msg = `${greeting} @${sender} @ezrealblindado da ${greeting} pro doctor whoooooo a a who who, who who 🎶`;
       break;
     case 'drezonho':
       msg = `${greeting} @${sender} del zap @ezrealblindado da ${greeting} pro pézinho matador de aula de catequese 🦶🦶🦶🦶🦶`;
@@ -156,7 +159,7 @@ async function attendance(event, context) {
     case 'oolucacidoo':
       msg = `${greeting} @${sender} :D <3 sdds ouvir um offspring @ezrealblindado responde logo o ${greeting} do Lucacido! ezRage`;
       break;
-    case 'Padree7Bot':
+    case 'padree7bot':
       msg = `${greeting} @${sender} para com essa Cailtyn top seu safado!!! @ezrealblindado responde logo o ${greeting} do padre 👉🗿👈 👉🗽👈`;
       break;
     case 'pnddddd':
