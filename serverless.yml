@@ -17,3 +17,9 @@ functions:
       - http:
           method: GET
           path: /greeting
+  cancel:
+    handler: src/handlers/cancel.handler
+    events:
+      - http:
+          method: GET
+          path: /cancel
