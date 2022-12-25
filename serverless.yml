@@ -9,6 +9,12 @@ provider:
   runtime: nodejs16.x
   memorySize: 256
   stage: ${opt:stage, 'dev'}
+  environment:
+    RIOT_TOKEN: 'RGAPI-d29f1c79-615c-40d8-b032-358328d92e17'
+    ACCOUNT_1_ID: 'XTtyavKwj3WihERwSNBeNOLpbRQE9pTahjWSq_SUKlMQRA'
+    ACCOUNT_2_ID: 'CVFgO8Hj7uxZ7j1ld4QjK3W0jsb05WY1uqVCdbPLKr_lQlQ'
+    ACCOUNT_3_ID: 'LF-n7TFTpvsbmpJDU8Uy9AYGHTYPzBfW7zNJBxzS3oQ5VA'
+    ACCOUNT_4_ID: 'w0MHR76mshnJTTdGzGAvqyDFnC32v0iLVPwA8sHXQ-agMyQ'
   
 functions:
   greeting:
@@ -23,3 +29,9 @@ functions:
       - http:
           method: GET
           path: /cancel
+  mastery:
+    handler: src/handlers/mastery.handler
+    events:
+      - http:
+          method: GET
+          path: /mastery
